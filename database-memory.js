@@ -7,7 +7,7 @@ export class DatabaseMemory {
     // map = como se fosse um objeto em js
 
     
-    list(){
+    list(search){
         return Array.from(this.#videos.entries()).map((videoArray) => {
             const id = videoArray[0]
             const data = videoArray[1]
@@ -16,6 +16,11 @@ export class DatabaseMemory {
                 id,
                 ...data,
             }
+        }).filter(video => {
+            if (search) {
+                return video.title.includes(search)
+            }
+            return true
         })
     }
     
