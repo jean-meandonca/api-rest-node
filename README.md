@@ -1,6 +1,6 @@
 # **Projeto NodejS + Fastify + Neon**
 
-Este projeto é uma API simples de vídeos, seguido como tutorial do YouTube, que usa **Fastify** como servidor e **Neon (PostgreSQL)** como banco de dados.
+Este projeto é uma API simples de vídeos, seguido como tutorial do canal RocketSeat, que usa **Fastify** como servidor e **Neon (PostgreSQL)** como banco de dados.
 
 A API permite **criar, listar, atualizar e deletar vídeos**, e utiliza **UUID gerado no Node como ID** para cada vídeo.
 
